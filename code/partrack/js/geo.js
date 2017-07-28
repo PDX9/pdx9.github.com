@@ -13,8 +13,8 @@ function geoFindMe() {
     output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
 
     var img = new Image();
-    img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
-
+    img.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCP94cGEr4cp213LFo2-dRM8rsX5Cecyy0?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
+    console.log("Whoa: " + img.src);
     output.appendChild(img);
   }
 
