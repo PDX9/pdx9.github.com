@@ -1,6 +1,7 @@
 function geoFindMe() {
   var output = document.getElementById("out");
 
+
   if (!navigator.geolocation){
     output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
     return;
@@ -51,7 +52,8 @@ function prompt(window, pref, message, callback) {
             callback(result);
         }
     }
-
+ 
+ 
     let self = window.PopupNotifications.show(
         window.gBrowser.selectedBrowser,
         "geolocation",
