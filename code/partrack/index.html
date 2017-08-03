@@ -1,40 +1,30 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="res/style.css">
+<script src="res/geo.js"></script>
+
   </head>
-  <body>
+  <body class="bgyellow">
 
-<div class="floleft tablebg wrap" style="margin:8px;">
+<div class="floleft">
+  <table border="0" width="290" class="tablebg" cellpadding="6">
+    <tr><td class="header" colspan="2">ParTrack</td></tr>
+    <tr><td>Mfg:</td><td class="bord-bbb">NDA Labs</td></tr> 
+    <tr><td>Part Number:</td><td class="bord-bbb">KBT-9894r</td></tr>
 
-  <table border="0" width="600" class="tablebg" cellpadding="6">
+    <tr><td>ISO:</td><td class="bord-bbb">9000</td></tr>
+    <tr><td>Floor:</td><td class="bord-bbb">6</td></tr>
+    <tr><td>Arrival:</td><td class="bord-bbb">Oct 3, 2018</td></tr>
+    <tr><td>Status:</td><td class="stat-green bord-bbb">On schedule</td></tr>
 
-  <tr><td class="header">ParTrack Manager</td></tr>
-
-  <tr><td class="bord-bbb"><a href="5BC02ACB2AD/part.html" target="parts">Ace Enterprises: KD-8273423</a></td>
-      <td class="stat-yellow">&nbsp;</td>
-      <td class="bord-bbb"><a href="5BC02ACB2AD">Details</a></td></tr>
-
-  <tr><td class="bord-bbb"><a href="9C96EF2DE87/part.html" target="parts">Ext Decor: PLH-860</a></td> 
-      <td class="stat-green">&nbsp;</td>
-      <td class="bord-bbb"><a href="9C96EF2DE87">Details</a></td></tr>
-
-  <tr><td class="bord-bbb"><a href="C90F1E85126/part.html" target="parts">NDA Labs: KBT-9894r</a></td>
-      <td class="stat-green">&nbsp;</td>
-      <td class="bord-bbb"><a href="C90F1E85126">Details</a></td></tr>
-
-
-  <tr><td colspan="3">
-    <iframe name="parts" src="5BC02ACB2AD/part.html"  width="600" height="400" style="border:none;" class="floleft"></iframe></td></tr>
-
-
+    <tr><td><button onclick="geoFindMe()">Show part location</button></td><td class="bord-bbb"><div id="out"></div></td></tr>
   </table>
 
-
-
-
-
 </div>
+
+<iframe src="part.html"  width="60%" height="60%" class="floleft" border="0"></iframe>
 
   </body>
 </html>

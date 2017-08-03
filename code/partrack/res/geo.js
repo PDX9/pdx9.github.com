@@ -11,7 +11,7 @@ function geoFindMe() {
     var latitude  = position.coords.latitude.toFixed(4);
     var longitude = position.coords.longitude.toFixed(4);
 
-    output.innerHTML = 'Latitude: ' + latitude + '° <br>Longitude: ' + longitude + '°';
+    output.innerHTML = 'Latitude: ' + latitude + '&deg; <br>Longitude: ' + longitude + '&deg;';
     /* output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>'; */
 
     /* var img = new Image();
