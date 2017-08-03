@@ -7,10 +7,11 @@ function geoFindMe() {
   }
 
   function success(position) {
-    var latitude  = position.coords.latitude;
-    var longitude = position.coords.longitude;
+    var latitude  = position.coords.latitude.toFixed(4);
+    var longitude = position.coords.longitude.toFixed(4);
 
-    output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+    output.innerHTML = 'Latitude: ' + latitude + '° <br>Longitude: ' + longitude + '°';
+    /* output.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>'; */
 
     /* var img = new Image();
     img.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCP94cGEr4cp213LFo2-dRM8rsX5Cecyy0?center=" + latitude + "," + longitude + "&zoom=13&size=300x300&sensor=false";
