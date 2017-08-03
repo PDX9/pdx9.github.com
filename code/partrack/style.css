@@ -5,6 +5,7 @@ table { background-color: #ffe;
 		cellpadding: 2px;
 	font-family: sans-serif; 
 		}
+#out {font-size: 80%;}
 
 .bgwhite {background-color: white;}
 .bgyellow {background-color: #ffe;}
